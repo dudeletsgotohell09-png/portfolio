@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navoda Wijepala · Portfolio</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ====== THEME TOGGLE ====== -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon" id="themeIcon"></i>
+    </button>
+
+    <!-- ====== NAVIGATION ====== -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="#home" class="logo"><i class="fas fa-home"></i></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ====== HERO ====== -->
+    <section id="home">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>
+                        Hi, <span class="highlight">Navoda Wijepala</span> here!!!
+                    </h1>
+                    <div class="typing-wrapper">
+                        <span id="typedText"></span><span class="cursor"></span>
+                    </div>
+                    <p>
+                        I'm a passionate Computer Science student crafting beautiful,
+                        functional, and adopting to user-centric digital experiences.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn">
+                            <i class="fas fa-rocket"></i> View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-paper-plane"></i> Contact
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/dudeletsgotohell09-png" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/navoda-wijepala-b31072375" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/navodawijepala" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@navodawijepala" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="hero-avatar">
+                    <div class="avatar-wrapper">
+                        <div class="avatar-inner">
+                            <img src="images\Profile.jpg" alt="Navoda Wijepala"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== ABOUT ====== -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="badge">About Me</span>
+                <h2>Who Am I ?</h2>
+                <p><i>Get to know me a little better.</i> </p><p><i>My journey, my values, and what drives me.</i></p>
+            </div>
+            <div class="about-grid">
+                <div class="about-text fade-in">
+                    <h3>A Developer Who Loves to Build</h3>
+                    <p>
+                        I'm Navoda Wijepala, a Computer Science undergraduate at General Sir Jhon Kotelawala Defence University, with hands-on experience in personal and group projects.
+                        I've been working as a developer for 1+ years, crafting web applications that solve real problems. I believe in
+                        writing clean, maintainable code and designing interfaces that
+                        people love to use.
+                    </p>
+                    <p>
+                        From startups to enterprise projects, I've worked across the
+                        stack, from pixel-perfect UIs to scalable backends. I'm
+                        constantly learning and exploring new technologies to stay ahead
+                        of the curve.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="number">3+</div>
+                            <div class="label">Projects Completed</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text fade-in">
+                    <h3>Beyond the Code</h3>
+                    <p>
+                        When I'm not at my desk, you'll find me hiking in the mountains,
+                        reading sci-fi novels, or experimenting with new recipes in the
+                        kitchen.  I'm a firm believer in work-life balance and bringing
+                        my whole self to everything I do.
+                    </p>
+                    
+                    <p>I believe great developers grow together. I'm passionate about volunteering and giving back to the developer community.</p>
+                        <ul class="community-badges">
+                        <li>🤝 Member, KDU IEEE Computer Society Branch</li>
+                        <li>💡 Member, KDU IEEE Women in Engineering Student Chapter</li>
+                        <li>🌐 Volunteer, KDU British Computer Society (BCS)</li>
+                        </ul>
+            
+                    <a href="#contact" class="btn btn-sm">
+                        <i class="fas fa-envelope"></i> Let's Connect
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== SKILLS ====== -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="badge">Expertise</span>
+                <h2> My Skills</h2>
+                <p><i>Technologies and tools I work with to bring ideas to life.</i></p>
+            </div>
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-category fade-in">
+                    <h4><i class="fas fa-code"></i> Frontend</h4>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>HTML5 &amp; CSS3</span><span>95%</span></div>
+                        <div class="skill-bar"><div class="fill" data-width="95"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>JavaScript (ES6+)</span><span>88%</span></div>
+                        <div class="skill-bar"><div class="fill" data-width="88"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>React &amp; Next.js</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="fill" data-width="85"></div></div>
+                    </div>
+                    
+                </div>
+                <!-- Backend -->
+                <div class="skill-category fade-in">
+                    <h4><i class="fas fa-server"></i> Backend</h4>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>PHP</span><span>70%</span></div>
+                        <div class="skill-bar"><div class="fill" data-width="70"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>Python (PyCharm)</span><span>88%</span></div>
+                        <div class="skill-bar"><div class="fill" data-width="88"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>SQL / MySQL</span><span>82%</span></div>
+                        <div class="skill-bar"><div class="fill" data-width="82"></div></div>
+                    </div>
+                    
+                </div>
+                <!-- Tools -->
+                <div class="skill-category fade-in">
+                    <h4><i class="fas fa-tools"></i> Tools &amp; DevOps</h4>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>Git &amp; GitHub</span><span>68%</span></div>
+                        <div class="skill-bar"><div class="fill" data-width="68"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>VS Code</span><span>92%</span></div>
+                        <div class="skill-bar"><div class="fill" data-width="92"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>AWS</span><span>76%</span></div>
+                        <div class="skill-bar"><div class="fill" data-width="76"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>Figma / UI Design</span><span>60%</span></div>
+                        <div class="skill-bar"><div class="fill" data-width="60"></div></div>
+                    </div>
+                </div>
+                <!-- Soft Skills -->
+                <div class="skill-category fade-in">
+                    <h4><i class="fas fa-users"></i> Soft Skills</h4>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>Communication</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="fill" data-width="90"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>Problem Solving</span><span>92%</span></div>
+                        <div class="skill-bar"><div class="fill" data-width="92"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>Team Leading & Collaboration</span><span>88%</span></div>
+                        <div class="skill-bar"><div class="fill" data-width="88"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>Analysis & Critical Thinking</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="fill" data-width="85"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== PROJECTS ====== -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="badge">Portfolio</span>
+                <h2>Featured Projects</h2>
+                <p><i>Some of the projects I've built or contributed to recently.</i></p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card fade-in">
+                    <div class="card-img" style="background: linear-gradient(135deg, #6c63ff, #b388ff);">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4><strong>MoodFlick:</strong> Mood-based Film Recommendation System</h4>
+                        <p>A mood-based film recommendation system built with C# WPF (.NET 8.0) and MySQL. It gives personalized movie suggestions using weighted scoring of mood, genre, language and era, with a database-driven catalog, secure login with role-based access, and a companion web interface.</p>
+                        <div class="tags">
+                            <span>C#</span>
+                            <span>.NET 8.0 WPF</span>
+                            <span>MySQL 8.0+</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://github.com/dudeletsgotohell09-png/Mood-Based-Film-Recommendation.git"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card fade-in">
+                    <div class="card-img" style="background: linear-gradient(135deg, #ff6b6b, #ffa07a);">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4> Automated Smart Parking System</h4>
+                        <p>An automated parking system for university faculty and staff.
+                         A Raspberry Pi 4 with a camera module watches the entry gate, detects and reads number plates with a fine-tuned YOLO11n model and EasyOCR, then checks the plate against a whitelist database before opening a servo-controlled barrier and assigning a parking slot by faculty zone. A live web dashboard tracks slot occupancy, entry logs, and system health, deployed publicly via a Cloudflare Tunnel on a custom domain.</p>
+                        <div class="tags">
+                            <span>Raspberry Pi 4</span>
+                            <span>SQLite</span>
+                            <span>Cloudflare Tunnel</span>
+                            <span>YOLOv11n</span>
+
+                        </div>
+                        <div class="card-links">
+                            <a href="https://github.com/Cap1ee/Autonomous-parking-system.git"><i class="fab fa-github"></i> Code</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card fade-in">
+                    <div class="card-img" style="background: linear-gradient(135deg, #4ecdc4, #44b39d);">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4><strong>Fresh:</strong> Online Grocery Store Management System</h4>
+                        <p>Fresh is a full-stack online grocery store I built using only HTML, CSS, JavaScript, PHP and MySQL.
+                            Customers can browse and search the catalogue, manage a cart, redeem promo codes and track orders. Administrators oversee inventory, order fulfilment and customer enquiries through a dedicated dashboard.  
+                        The platform features role-based security, a responsive interface and a dark mode.</p>
+                        <div class="tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span><br>
+                            <span>PHP 8</span>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://github.com/dudeletsgotohell09-png/Online-Grocery-Store-Management---Fresh-.git"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ====== CONTACT ====== -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="badge">Get in Touch</span>
+                <h2>Let's Work Together</h2>
+                <p>Have a project in mind or just want to say hello? I'd love to hear from you.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info fade-in">
+                    <h3>Let's Connect</h3>
+                    <p>
+                        I'm always open to discussing new projects, creative ideas, or
+                        opportunities to contribute to your team.
+                    </p>
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-envelope"></i></div>
+                        <div class="info">
+                            <strong>Email</strong>
+                            <span>navodawijepala09@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="info">
+                            <strong>Location</strong>
+                            <span>Colombo, Sri Lanka</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="info">
+                            <strong>Phone</strong>
+                            <span>+94 77 721 3089</span>
+                        </div>
+                    </div>
+                    <div class="social-links" style="margin-top: 24px;">
+                        <a href="https://github.com/dudeletsgotohell09-png"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/navoda-wijepala-b31072375"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/navodawijepala"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/94777213089"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form fade-in" id="contactForm" 
+                    action="https://formspree.io/f/mljgkvpa" 
+                    method="POST"
+                >
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Navoda Wijepala" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="navodawije@.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                    <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Navoda Wijepala.</p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
